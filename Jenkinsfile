@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO        = "https://github.com/veeravenkateswararao/react.git"
+        GIT_REPO        = "https://github.com/mehar-pa-45/react_Project.git"
         GIT_BRANCH      = "main"
 
-        DOCKERHUB_USER  = "venkyveera"
+        DOCKERHUB_USER  = "mehardocker45"
         IMAGE_NAME      = "react-app"
         IMAGE_TAG       = "${BUILD_NUMBER}"
 
@@ -20,11 +20,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                checkout scmGit(
-                    branches: [[name: "*/${GIT_BRANCH}"]],
-                    userRemoteConfigs: [[
-                        credentialsId: 'venkygit',
-                        url: "${GIT_REPO}"
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-cred', url: 'https://github.com/mehar-pa-45/react_Project.git']])
                     ]]
                 )
             }
