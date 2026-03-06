@@ -21,8 +21,6 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-cred', url: 'https://github.com/mehar-pa-45/react_Project.git']])
-                    ]]
-                )
             }
         }
 
