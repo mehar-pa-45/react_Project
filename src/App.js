@@ -36,7 +36,7 @@ function App() {
         <section id="bouquets" className="fs-section">
           <div className="fs-section__header">
             <h3>Featured bouquets</h3>
-            <p>Hand-picked favorites from Venky&apos;s Flower Studio.</p>
+            <p>Hand-picked favorites from Royal Store Flower Studio.</p>
           </div>
           <div className="fs-grid">
             <article className="fs-card">
@@ -80,7 +80,7 @@ function App() {
         {/* About Section */}
         <section id="about" className="fs-section fs-section--alt">
           <div className="fs-section__header">
-            <h3>Why shop with Venky?</h3>
+            <h3>Why shop with Royal Store?</h3>
             <p>We believe every bouquet should feel personal.</p>
           </div>
           <div className="fs-columns">
@@ -114,7 +114,7 @@ function App() {
             <div>
               <h4>Visit our studio</h4>
               <p>
-                Venky&apos;s Flower Studio, Your City, India
+                Royal Store Flower Studio, Your City, India
                 <br />
                 Open 9:00 AM – 8:00 PM, all days.
               </p>
@@ -124,7 +124,7 @@ function App() {
               <p>
                 Phone: +91-90000-00000
                 <br />
-                Email: hello@venkysflowershop.com
+                Email: Royalstore.com
               </p>
             </div>
             <div>
@@ -137,7 +137,7 @@ function App() {
             </div>
           </div>
           <p className="fs-footer__bottom">
-            © {new Date().getFullYear()} Venky&apos;s Flower Studio. All rights reserved.
+            © {new Date().getFullYear()} Royal Store Flower Studio. All rights reserved.
           </p>
         </section>
       </main>
